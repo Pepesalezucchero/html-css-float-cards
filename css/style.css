@@ -1,3 +1,4 @@
+/*info e stili generici di pagina*/
 *{
     margin: 0;
     box-sizing: border-box;
@@ -6,4 +7,24 @@
 :root{
     font-family: 'Tilt Neon', sans-serif;
     font-size: 16px;
+}
+
+.centro-pagina{
+    margin: 2% 20% 0;
+}
+
+h1, p{
+    text-align: center;
+    margin: 2%;
+}
+
+
+
+/*colori font*/
+[target="colore-titolo"] {
+    color: darkviolet;
+}
+
+[target="colore-font-email"] {
+    color: blue;
 }
