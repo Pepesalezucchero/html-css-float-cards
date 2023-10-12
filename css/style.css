@@ -6,7 +6,7 @@
 
 :root{
     font-family: 'Tilt Neon', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .centro-pagina{
@@ -16,7 +16,7 @@
 /*titolo e paragrafo*/
 h1, p{
     text-align: center;
-    margin: 2%;
+    margin-bottom: 4%;
 }
 
 /*costruzione colonne*/
@@ -28,7 +28,7 @@ h1, p{
 
 .colsinistra, .colcentrale, .coldestra{
     float: left;
-    width: calc((100% / 3) - 20px);
+    width: (calc(100% / 3) - 20px);
     background-color: black;
     box-shadow: 0px 0px 10px 1px black;
     margin-bottom: 5%;
@@ -38,17 +38,30 @@ h1, p{
     margin-left: 30px;
 }
 
+/*contenuto riquadri*/
 .immagini{
     height: 100px;
     vertical-align: middle;
 }
 
+.impostazioni-stile-riquadri{
+    list-style-type: none;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 0;
+}
+
+li{
+    padding-right: 24px;
+    margin: 5%;
+}
 
 /*colori font*/
 [target="colore-titolo"] {
     color: darkviolet;
 }
 
-[target="colore-font-email"] {
-    color: blue;
+[target="no-linea"] {
+    text-decoration: none;
 }
