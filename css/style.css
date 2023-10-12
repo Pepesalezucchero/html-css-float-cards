@@ -13,11 +13,31 @@
     margin: 2% 20% 0;
 }
 
+/*titolo e paragrafo*/
 h1, p{
     text-align: center;
     margin: 2%;
 }
 
+/*costruzione colonne*/
+.row{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col{
+    float: left;
+    width: ((100% / 3) - 20px);
+    background-color: black;
+    box-shadow: 0px 0px 10px 1px black;
+    margin-bottom: 5%;
+    margin-left: 30px;
+}
+
+[target="margine-escluso"] {
+    margin-left: 0;
+}
 
 
 /*colori font*/
