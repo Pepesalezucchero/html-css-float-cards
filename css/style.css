@@ -1,53 +1,37 @@
-/*info e stili generici di pagina*/
+/*impostazione generale di pagina*/
 *{
     margin: 0;
     box-sizing: border-box;
 }
 
 :root{
-    font-family: 'Tilt Neon', sans-serif;
-    font-size: 14px;
-}
-
-.centro-pagina{
-    margin: 2% 20% 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
 
-/*titolo e paragrafo*/
+/*strutturazione del corpo della pagina*/
+.Struttura-della-pagina{
+    margin: 2% 15% 0;
+}
+
+
+/*impostazioni del font di pagina*/
 h1, p{
     text-align: center;
-    margin-bottom: 4%;
+    margin: 4% 0;
 }
 
-
-/*costruzione colonne*/
-.row{
-    content: "";
-    display: table;
-    clear: both;
+h1{
+    font-size: 40px;
 }
 
-.colsinistra, .colcentrale, .coldestra{
-    float: left;
-    width: (calc(100% / 3) - 20px);
-    background-color: black;
-    box-shadow: 0px 0px 10px 1px black;
-    margin-bottom: 5%;
-}
-
-.colcentrale, .coldestra{
-    margin-left: 30px;
-}
-
-
-/*contenuto riquadri*/
-.immagini{
+.foto{
     height: 100px;
     vertical-align: middle;
 }
 
-.impostazioni-stile-riquadri{
+.impostazioni-lista{
     list-style-type: none;
     color: white;
     display: inline-block;
@@ -56,16 +40,35 @@ h1, p{
 }
 
 li{
-    padding-right: 24px;
-    margin: 5%;
+    margin: 2%;
 }
 
 
-/*colori font*/
-[target="colore-titolo"] {
-    color: darkviolet;
+/*dati dei 6 contenitori centrali*/
+.trow::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
-[target="no-linea"] {
+.colsinistra, .colcentrale, .coldestra{
+    float: left;
+    width: calc((100% / 3) - 20px);
+    background-color: black;
+    margin-bottom: 5%;
+    box-shadow: 0px 0px 10px 1px black
+}
+
+.colcentrale, .coldestra{
+    margin-left: 30px;
+}
+
+
+/*colori e accortezze*/
+h1[target="colore"] {
+    color: #f02663;
+}
+
+a{
     text-decoration: none;
 }
